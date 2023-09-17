@@ -8,19 +8,19 @@
 
 ### 2.html
 
-##### <strong></strong>, <u></u>
+##### <strong>, <u>
 
 ---
 
 ### 3.html
 
-##### <h1></h1>, heading Tag
+##### <h1>, heading Tag
 
 ---
 
 ### 4.html
 
-##### <br>,<p></p>
+##### <br>,<p>
 
 ---
 
@@ -32,15 +32,15 @@
 
 ### 6.html
 
-##### <ul></ul>, <li></li>, <ol></ol>
+##### <ul>, <li>, <ol>
 
 ---
 
 ### 7.html
 
-##### <title></title>, <meta charset="utf-8">,<!DOCTYPE html><html><head><body></body></head></html>
+##### <title>, <meta charset="utf-8">,<!DOCTYPE html><html><head><body
 
-##### <a></a>
+##### <a>
 
 ##### : 새탭이 열리도록 설정 ~> target="\_blank"
 
