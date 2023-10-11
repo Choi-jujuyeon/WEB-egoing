@@ -8,19 +8,19 @@
 
 ### 2.html
 
-##### <strong>, <u>
+##### <strong></strong>, <u></u>
 
 ---
 
 ### 3.html
 
-##### <h1>, heading Tag
+##### <h1></h1>, heading Tag
 
 ---
 
 ### 4.html
 
-##### <br>,<p>
+##### <br>,<p></p>
 
 ---
 
@@ -32,15 +32,15 @@
 
 ### 6.html
 
-##### <ul>, <li>, <ol>
+##### <ul></ul>, <li></li>, <ol></ol>
 
 ---
 
 ### 7.html
 
-##### <title>, <meta charset="utf-8">,<!DOCTYPE html><html><head><body
+##### <title></title>, <meta charset="utf-8">,<!DOCTYPE html><html><head><body></body></head></html>
 
-##### <a>
+##### <a></a>
 
 ##### : 새탭이 열리도록 설정 ~> target="\_blank"
 
@@ -53,7 +53,5 @@
 ##### 웹사이트 완성(link에 대한 실습만 진행. 내용수정 x )
 
 ---
-
-###
 
 ##### https://info.cern.ch/
