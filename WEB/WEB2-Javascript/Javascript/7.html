@@ -67,6 +67,45 @@
         
         "
         />
+        <!-- 리팩토링 시작하기~!~!!!-------------------------- -->
+        <!-- toggle ~> this 옵션 사용하기 -->
+        <input
+            type="button"
+            value="night"
+            onclick="
+
+        if (this.value==='night'){
+            document.querySelector('body').style.backgroundColor='black';
+            document.querySelector('body').style.color='white';
+            this.value='day';
+
+        }else {
+            document.querySelector('body').style.backgroundColor='white';
+            document.querySelector('body').style.color='black'
+            this.value='night';
+        }
+        
+        "
+        />
+        <!-- toggle ~> this 옵션 사용하기+중복 최소화 -->
+        <input
+            type="button"
+            value="night"
+            onclick="
+            var target=document.querySelector('body');
+            if (this.value==='night'){
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                this.value='day';
+
+            }else {
+                target.style.backgroundColor='white';
+                target.style.color='black'
+                this.value='night';
+            }
+            
+            "
+        />
         <p>
             <a href="https://www.youtube.com/watch?v=V3pkC1hE-as"
                 >Hypertext Markup Language (HTML) </a
