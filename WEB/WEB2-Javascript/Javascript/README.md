@@ -16,4 +16,10 @@
 
 ---
 
+## 3.html
+
+##### style="color:~~; background-color:~~~ "
+
+##### 선택자 ~> class(그룹으로 적용가능), id(특정 1개만 적용가능)
+
 ---
