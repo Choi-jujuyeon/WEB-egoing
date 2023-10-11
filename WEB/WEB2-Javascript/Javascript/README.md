@@ -32,4 +32,10 @@
 
 ## 5.html
 
-##### day/night 기능 구현 ~> toggle로 구현하기
+##### Comparison operators & Boolean
+
+---
+
+## 6.html
+
+##### Conditional statements
