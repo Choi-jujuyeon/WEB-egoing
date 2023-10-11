@@ -27,3 +27,9 @@
 ## 4.html
 
 ##### day/night 기능 구현 ~> onclick="document.querySelector('').style.color='';"
+
+---
+
+## 5.html
+
+##### day/night 기능 구현 ~> toggle로 구현하기
