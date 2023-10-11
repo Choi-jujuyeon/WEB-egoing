@@ -39,3 +39,9 @@
 ## 6.html
 
 ##### Conditional statements
+
+---
+
+## 7.html
+
+##### day-night 기능 구현 ~> if-else 활용해 toggle로 구현하기
