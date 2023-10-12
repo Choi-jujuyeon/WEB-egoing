@@ -61,3 +61,9 @@
 ###### 배열 길이 확인 ~> document.write(배열.length)
 
 ###### 배열 끝에 값 추가 ~> document.push("")
+
+---
+
+## 9.html
+
+##### while(조건) {} ~> 조건문 만족할 때까지만 반복
