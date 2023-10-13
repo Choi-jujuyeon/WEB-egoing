@@ -108,4 +108,10 @@
 
 #### Object-Iterate
 
-#### Object-Basic & Propoerty & Method
+#### Object-Basic - Property & Method
+
+---
+
+## 16.html
+
+#### day/night ~> refactoring (+use Object)
