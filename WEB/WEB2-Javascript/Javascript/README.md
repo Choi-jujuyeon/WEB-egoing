@@ -115,3 +115,9 @@
 ## 16.html
 
 #### day/night ~> refactoring (+use Object)
+
+---
+
+## 17-1.html + 17-2.js
+
+#### separate files ~> js/html (cache 사용으로 비용절감+로딩시간 단축)
