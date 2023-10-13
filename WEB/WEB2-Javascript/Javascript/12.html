@@ -22,16 +22,36 @@
             function onePlusOne() {
                 document.write(1 + 1);
             }
-            onePlusOne();
+            // onePlusOne();
 
             function sum(left, right) {
                 document.write(left + right + "<br>");
             }
+            function sumColorRed(left, right) {
+                document.write(
+                    '<div style ="color:red">' + left + right + "</div><br>"
+                );
+            }
             sum(2, 3);
             sum(3, 4);
+            sumColorRed(2, 3);
         </script>
 
         <hr />
         <h2>Return</h2>
+
+        <script>
+            function sum2(left, right) {
+                return left + right;
+            }
+            // sume2(2,3)  //5에 대한 표현식으로
+            document.write(sum2(2, 3) + "<br>");
+            document.write(
+                '<div style="color:red">' + sum2(2, 3) + "</div><br>"
+            );
+            document.write(
+                '<div style="font-size:3rem">' + sum2(2, 3) + "</div><br>"
+            );
+        </script>
     </body>
 </html>
