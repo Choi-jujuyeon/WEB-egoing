@@ -93,3 +93,9 @@
 ## 13.html
 
 #### day/night ~> Complete (+ use Fuction)
+
+---
+
+## 14.html
+
+#### day/night ~> refactoring (+ use Function)
