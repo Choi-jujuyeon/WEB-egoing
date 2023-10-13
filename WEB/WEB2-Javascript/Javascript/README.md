@@ -121,3 +121,21 @@
 ## 17-1.html + 17-2.js
 
 #### separate files ~> js/html (cache 사용으로 비용절감+로딩시간 단축)
+
+---
+
+## Library vs Framework
+
+#### library ~> 재사용하기 쉽도록 되어 있는 소프트웨어
+
+#### ex) jQuery
+
+#### framework ~> 만들고자 하는것에 따라 공통적인 부분을 묶어둔 것.
+
+---
+
+## UI vs API
+
+#### UserInterface
+
+#### ApplicationProgrammingInterface
