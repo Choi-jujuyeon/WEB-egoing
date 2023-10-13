@@ -87,3 +87,9 @@
 ## 12.html
 
 #### Function-Basic +Return
+
+---
+
+## 13.html
+
+#### day/night ~> Complete (+ use Fuction)
