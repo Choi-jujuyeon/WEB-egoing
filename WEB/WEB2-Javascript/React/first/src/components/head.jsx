@@ -1,7 +1,10 @@
-const Head = () => {
+const Head = (props) => {
+    console.log("props", props.title);
     return (
         <header>
-            <a href="/">WEB</a>
+            <h1>
+                <a href="/">{props.title}</a>
+            </h1>
         </header>
     );
 };

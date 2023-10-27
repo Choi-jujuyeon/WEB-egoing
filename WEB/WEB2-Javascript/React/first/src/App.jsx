@@ -5,9 +5,9 @@ import Nav from "./components/nav";
 function App() {
     return (
         <div>
-            <Head />
+            <Head title="WEB" />
             <Nav />
-            <Article />
+            <Article title="Welcome" body="Hello, React~!~" />
         </div>
     );
 }
