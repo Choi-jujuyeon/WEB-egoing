@@ -11,7 +11,7 @@ const Nav = (props) => {
                     href={"/read/" + t.id}
                     onClick={(e) => {
                         e.preventDefault();
-                        props.onChangeMode(e.target.id);
+                        props.onChangeMode(Number(e.target.id));
                     }}
                 >
                     {t.title}

@@ -7,6 +7,7 @@ function App() {
     // mode의 상태로 업그레이드 시켜줘야 함.
     // const mode = "READ";
     const [mode, setMode] = useState("WELCOME");
+    const [id, setId] = useState(null);
 
     const topics = [
         { id: 1, title: "html", body: "html is ..." },
@@ -18,7 +19,18 @@ function App() {
     if (mode === "WELCOME") {
         content = <Article title="Welcome" body="Hello, WEB" />;
     } else if (mode === "READ") {
-        content = <Article title="Read" body="Hello, Read" />;
+        // id와 일치하는 원소를 찾아서, title과 body 값으로 설정
+        let title,
+            body = null;
+
+        for (let i = 0; i < topics.length; i++) {
+            console.log(topics[i].id, id);
+            if (topics[i].id === id) {
+                title = topics[i].title;
+                body = topics[i].body;
+            }
+        }
+        content = <Article title={title} body={body} />;
     }
 
     return (
@@ -32,9 +44,12 @@ function App() {
             />
             <Nav
                 topics={topics}
-                onChangeMode={(id) => {
-                    alert(id);
+                onChangeMode={(_id) => {
+                    alert(_id);
                     setMode("READ");
+
+                    // nav 컴포넌트 id를 클릭했을 떄 상태변경
+                    setId(_id);
                 }}
             />
             {content}
