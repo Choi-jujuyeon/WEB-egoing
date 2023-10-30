@@ -26,4 +26,22 @@
 
 ## PROP
 
-####
+#### {중괄호 안에 있는 문자는 문자열이 아닌 표현식으로 취급된다}
+
+#### data : 객체로 관리
+
+---
+
+#### Nav Component
+
+##### step 01. data(id, title, body) 를 topics 객체로 저장
+
+##### step 02. Nav 컴포넌트에 props로 topic 객체 전체 내려주기 (data를 내려주는 것)
+
+##### step 03. 빈 배열 선언 ~> const lis = [];
+
+##### step 03.반복문을 사용해 topics의 순서 항목을 변수 t에 저장
+
+##### step 04. topics의 i번지의 원하는 데이터를 추출해 빈배열에 저장해준다.
+
+##### step 05. 값이 저장된 배열을 마지막에 호출해준다
