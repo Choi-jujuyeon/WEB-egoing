@@ -3,7 +3,12 @@ const Nav = (props) => {
 
     for (let i = 0; i < props.topics.length; i++) {
         let t = props.topics[i];
-        lis.push(<li>{t.title}</li>);
+        lis.push(
+            // key-prop
+            <li key={t.id}>
+                <a href={"/read/" + t.id}>{t.title}</a>
+            </li>
+        );
     }
     return (
         <nav>
