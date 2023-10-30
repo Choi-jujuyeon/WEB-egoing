@@ -6,7 +6,16 @@ const Nav = (props) => {
         lis.push(
             // key-prop
             <li key={t.id}>
-                <a href={"/read/" + t.id}>{t.title}</a>
+                <a
+                    id={t.id}
+                    href={"/read/" + t.id}
+                    onClick={(e) => {
+                        e.preventDefault();
+                        props.onChangeMode(e.target.id);
+                    }}
+                >
+                    {t.title}
+                </a>
             </li>
         );
     }

@@ -17,7 +17,12 @@ function App() {
                     alert("Header");
                 }}
             />
-            <Nav topics={topics} />
+            <Nav
+                topics={topics}
+                onChangeMode={(id) => {
+                    alert(id);
+                }}
+            />
             <Article title="Welcome" body="Hello, React~!~" />
         </div>
     );
