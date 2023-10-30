@@ -11,7 +11,12 @@ function App() {
 
     return (
         <div>
-            <Head title="WEB" />
+            <Head
+                title="WEB"
+                onChangeMode={() => {
+                    alert("Header");
+                }}
+            />
             <Nav topics={topics} />
             <Article title="Welcome" body="Hello, React~!~" />
         </div>
