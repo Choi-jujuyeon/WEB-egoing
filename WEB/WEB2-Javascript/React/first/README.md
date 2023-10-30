@@ -51,3 +51,7 @@
 #### event.preventDefault : event의 기본 동작을 방지해줌.
 
 #### event.target : event를 유발시킨 태그를 가리킨다.
+
+## State
+
+####
