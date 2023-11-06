@@ -1,4 +1,5 @@
 import Article from "./components/article";
+import Create from "./components/create";
 import Head from "./components/head";
 import Nav from "./components/nav";
 import { useState } from "react";
@@ -8,12 +9,13 @@ function App() {
     // const mode = "READ";
     const [mode, setMode] = useState("WELCOME");
     const [id, setId] = useState(null);
+    const [nextId, setNextId] = useState(4);
 
-    const topics = [
+    const [topics, setTopics] = useState([
         { id: 1, title: "html", body: "html is ..." },
         { id: 2, title: "css", body: "css is ..." },
         { id: 3, title: "javascript", body: "javascript is ..." },
-    ];
+    ]);
 
     let content = null;
     if (mode === "WELCOME") {
@@ -31,6 +33,24 @@ function App() {
             }
         }
         content = <Article title={title} body={body} />;
+    } else if (mode === "CREATE") {
+        content = (
+            <Create
+                onCreate={(_title, _body) => {
+                    const newTopic = {
+                        id: nextId,
+                        title: _title,
+                        body: _body,
+                    };
+                    const newTopics = [...topics];
+                    newTopics.push(newTopic);
+                    setTopics(newTopics);
+                    setMode("READ");
+                    setId(nextId);
+                    setNextId(nextId + 1);
+                }}
+            />
+        );
     }
 
     return (
@@ -53,6 +73,17 @@ function App() {
                 }}
             />
             {content}
+
+            {/* CREATE page로 이동 */}
+            <a
+                href="/create"
+                onClick={(e) => {
+                    e.preventDefault();
+                    setMode("CREATE");
+                }}
+            >
+                Create
+            </a>
         </div>
     );
 }

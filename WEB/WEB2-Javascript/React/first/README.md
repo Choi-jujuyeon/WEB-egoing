@@ -73,3 +73,21 @@
 ##### step 02. 상태 변경이 필요한 경우 ~> setMode("READ")
 
 ##### step 03. 내가 어떤 번호의 Nav를 클릭했는지 상태체크~> id로 변경
+
+## CREATE
+
+#### 만들고자 하는 것 : 버튼 클릭시 title과 body 입력란에 내용을 입력에 목차를 추가할 수 있다.
+
+### 상태 변경시 원시데이터 타입일 경우
+
+#### const [value, setValue] = useState(PRIMITIVE); ~> ex) string, number, boolean ...
+
+### 상태 변경시 범객체 타입일 경우
+
+#### const [value,setValue] = useState(Object);
+
+#### 복제 - newValue={...value}
+
+#### 복제본 변경 - newValue 변경
+
+#### 컴포넌트 리로딩 - setValue(newValue)
