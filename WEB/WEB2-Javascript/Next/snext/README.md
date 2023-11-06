@@ -22,4 +22,6 @@
 
 #### http://domain/path(segment/segment/)
 
-####
+## Single page Application
+
+#### Server Side Rendering(SSR) 효율적 + 최적화가능
