@@ -25,3 +25,7 @@
 ## Single page Application
 
 #### Server Side Rendering(SSR) 효율적 + 최적화가능
+
+## 정적 자원 사용하기
+
+#### 저장위치 ~> public 폴더 사용
