@@ -93,3 +93,5 @@
 #### 컴포넌트 리로딩 - setValue(newValue)
 
 ## UPDATE = CREATE + READ
+
+## Delete

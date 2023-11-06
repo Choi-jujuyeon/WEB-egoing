@@ -37,17 +37,37 @@ function App() {
         }
         content = <Article title={title} body={body} />;
         contextControl = (
-            <li>
-                <a
-                    href={"/update/" + id}
-                    onClick={(e) => {
-                        e.preventDefault();
-                        setMode("UPDATE");
-                    }}
-                >
-                    Update
-                </a>
-            </li>
+            <>
+                <li>
+                    <a
+                        href={"/update/" + id}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            setMode("UPDATE");
+                        }}
+                    >
+                        Update
+                    </a>
+                </li>
+                {/* DELETE 기능 구현 */}
+                <li>
+                    <input
+                        type="button"
+                        value="Delete"
+                        onClick={() => {
+                            const newTopics = [];
+
+                            for (let i = 0; i < topics.length; i++) {
+                                if (topics[i].id !== id) {
+                                    newTopics.push(topics[i]);
+                                }
+                            }
+                            setTopics(newTopics);
+                            setMode("WELCOME");
+                        }}
+                    />
+                </li>
+            </>
         );
     } else if (mode === "CREATE") {
         content = (
