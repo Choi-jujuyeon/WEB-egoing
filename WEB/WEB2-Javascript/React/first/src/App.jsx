@@ -1,7 +1,7 @@
-import Article from "./components/article";
-import Create from "./components/create";
-import Head from "./components/head";
-import Nav from "./components/nav";
+import Article from "./components/Article";
+import Create from "./components/Create";
+import Head from "./components/Head";
+import Nav from "./components/Nav";
 import { useState } from "react";
 
 function App() {
