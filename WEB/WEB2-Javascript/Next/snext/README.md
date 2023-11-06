@@ -17,3 +17,9 @@
 ## 뼈대 만들기
 
 #### layout.js ~> 공통적인 내용 구성하기
+
+## Routing
+
+#### http://domain/path(segment/segment/)
+
+####
