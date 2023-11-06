@@ -3,6 +3,7 @@ import Create from "./components/Create";
 import Head from "./components/Head";
 import Nav from "./components/Nav";
 import { useState } from "react";
+import Update from "./components/Update";
 
 function App() {
     // mode의 상태로 업그레이드 시켜줘야 함.
@@ -18,6 +19,8 @@ function App() {
     ]);
 
     let content = null;
+    let contextControl = null;
+
     if (mode === "WELCOME") {
         content = <Article title="Welcome" body="Hello, WEB" />;
     } else if (mode === "READ") {
@@ -33,6 +36,19 @@ function App() {
             }
         }
         content = <Article title={title} body={body} />;
+        contextControl = (
+            <li>
+                <a
+                    href={"/update/" + id}
+                    onClick={(e) => {
+                        e.preventDefault();
+                        setMode("UPDATE");
+                    }}
+                >
+                    Update
+                </a>
+            </li>
+        );
     } else if (mode === "CREATE") {
         content = (
             <Create
@@ -48,6 +64,37 @@ function App() {
                     setMode("READ");
                     setId(nextId);
                     setNextId(nextId + 1);
+                }}
+            />
+        );
+    } else if (mode === "UPDATE") {
+        let title,
+            body = null;
+
+        for (let i = 0; i < topics.length; i++) {
+            console.log(topics[i].id, id);
+            if (topics[i].id === id) {
+                title = topics[i].title;
+                body = topics[i].body;
+            }
+        }
+        content = (
+            <Update
+                title={title}
+                body={body}
+                onUpdate={(title, body) => {
+                    // console.log(title, body);
+                    const newTopics = [...topics];
+                    const updatedTopic = { id: id, title: title, body: body };
+
+                    for (let i = 0; i < newTopics.length; i++) {
+                        if (newTopics[i].id === id) {
+                            newTopics[i] = updatedTopic;
+                            break;
+                        }
+                    }
+                    setTopics(newTopics);
+                    setMode("READ");
                 }}
             />
         );
@@ -75,15 +122,21 @@ function App() {
             {content}
 
             {/* CREATE page로 이동 */}
-            <a
-                href="/create"
-                onClick={(e) => {
-                    e.preventDefault();
-                    setMode("CREATE");
-                }}
-            >
-                Create
-            </a>
+            <ul>
+                <li>
+                    <a
+                        href="/create"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            setMode("CREATE");
+                        }}
+                    >
+                        Create
+                    </a>
+                </li>
+                {/* mode가 READ일 경우에만 동작하도록 설정 */}
+                {contextControl}
+            </ul>
         </div>
     );
 }

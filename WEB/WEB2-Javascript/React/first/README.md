@@ -91,3 +91,5 @@
 #### 복제본 변경 - newValue 변경
 
 #### 컴포넌트 리로딩 - setValue(newValue)
+
+## UPDATE = CREATE + READ
