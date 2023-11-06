@@ -29,3 +29,21 @@
 ## 정적 자원 사용하기
 
 #### 저장위치 ~> public 폴더 사용
+
+## backend(json-server)
+
+#### npx json-server --port 9999 --watch db.json
+
+#### http://localhost:9999/(내가 생성한 data 배열명)
+
+#### 네트워크(response) + 콘솔창 띄우고 실습 진행
+
+```
+
+fetch('http://localhost:9999/topics').then((resp)=>{
+    return resp.json();
+}).then(result=>{
+    console.log(result)
+});
+
+```
