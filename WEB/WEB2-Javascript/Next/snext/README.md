@@ -47,3 +47,17 @@ fetch('http://localhost:9999/topics').then((resp)=>{
 });
 
 ```
+
+## 글 목록 가져오기
+
+### ServerComponent vs Client Component
+
+#### 서로 사용할 수 있는 api가 다르다
+
+#### 사용자와 상호작용 할 경우 == ClientComp
+
+#### 정보를 단순히 보여주는 역할을 할 경우 == ServerComp
+
+#### fetch('주소').then(resp).then()
+
+##
