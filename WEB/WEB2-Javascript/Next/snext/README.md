@@ -63,3 +63,7 @@ fetch('http://localhost:9999/topics').then((resp)=>{
 ### ServerComponent-장점
 
 #### client로 js를 전송하지 않아 용량이 적다.
+
+## 글 읽기
+
+#### 사용자와 상호작용-x (data 출력만)== SeverComp 사용하기 !
