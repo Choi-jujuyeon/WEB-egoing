@@ -60,4 +60,6 @@ fetch('http://localhost:9999/topics').then((resp)=>{
 
 #### fetch('주소').then(resp).then()
 
-##
+### ServerComponent-장점
+
+#### client로 js를 전송하지 않아 용량이 적다.
