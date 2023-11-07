@@ -67,3 +67,11 @@ fetch('http://localhost:9999/topics').then((resp)=>{
 ## 글 읽기
 
 #### 사용자와 상호작용-x (data 출력만)== SeverComp 사용하기 !
+
+## 글 생성하기
+
+#### 사용자와 상호작용-o == ClientComp 사용하기 !
+
+#### submit 클릭시 - 서버에 데이터 전송 == page 리로딩
+
+#### 생성한 id값 받아 -> 리다이렉션 == useRouter사용
